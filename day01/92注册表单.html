@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <h2>表单注册</h2>
+        <hr>
+        <form action="#">
+            <label>昵称：<input type="text" name="username" placeholder="昵称"></label><br><br>
+            <label>密码：<input type="password" name="password" placeholder="密码"></label><br><br>
+            性别：<label><input type="radio" name="gender" value="1">male</label>
+            <label><input type="radio" name="gender" value="2">female</label>
+            <label><input type="radio" name="gender" value="3" checked>secret</label><br><br>
+            爱好：<label><input type="checkbox" name="hobby" value="1" checked>TV</label>
+            <label><input type="checkbox" name="hobby" value="2" checked>RUN</label>
+            <label><input type="checkbox" name="hobby" value="3">MUSIC</label><br><br>
+            城市：<label>
+            <select name="city">
+                <option value="" selected>----</option>
+                <option value="1">北京</option>
+                <option value="2">上海</option>
+            </select>
+        </label><br><br>
+            图片：<input type="file" name="pic" multiple><br><br>
+            自我介绍：<textarea name="describe" cols="30" rows="10" placeholder="自我介绍"></textarea><br><br>
+            同意条款：<label><input type="checkbox" name="agree" value="true" checked><a href="#">社区条款</a></label>
+            <div>
+                <dl>
+                    <dt>社区条款：</dt>
+                    <dd>文明礼貌</dd>
+                    <dd>诚实守信</dd>
+                </dl>
+            </div>
+            <button type="submit">注册</button>
+            <br>
+            <button type="reset">重置</button>
+            <br>
+        </form>
+
+    </body>
+</html>

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+            table, tr, td, th {
+                border: solid 1px;
+            }
+
+            td, th {
+                width: 100px;
+                height: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>表格标签</h2>
+        <hr>
+        <table>
+            <tr>
+                <td>姓名</td>
+                <td>年龄</td>
+                <td>性别</td>
+            </tr>
+            <tr>
+                <td>吕布</td>
+                <td>30</td>
+                <td>男</td>
+            </tr>
+            <tr>
+                <td>貂蝉</td>
+                <td>26</td>
+                <td>女</td>
+            </tr>
+        </table>
+        <hr>
+        <h2>表格标签caption</h2>
+        <hr>
+        <table>
+            <caption>名著人物表</caption>
+            <!--            行-->
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>性别</th>
+            </tr>
+            <tr>
+                <td>吕布</td>
+                <td>30</td>
+                <td>男</td>
+            </tr>
+            <tr>
+                <td>貂蝉</td>
+                <td>26</td>
+                <td>女</td>
+            </tr>
+        </table>
+
+        <hr>
+        <h2>表格结构thead tbody tfoot</h2>
+        <hr>
+        <table>
+            <caption>名著人物表</caption>
+            <!--            行-->
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>年龄</th>
+                    <th>性别</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>吕布</td>
+                    <td>30</td>
+                    <td>男</td>
+                </tr>
+                <tr>
+                    <td>貂蝉</td>
+                    <td>26</td>
+                    <td>女</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <h2>单元格合并</h2>
+        <hr>
+        <table>
+            <caption>名著人物表</caption>
+            <!--            行-->
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>年龄</th>
+                    <th>性别</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>吕布</td>
+                    <td rowspan="2">30</td>
+                    <td>男</td>
+                </tr>
+                <tr>
+                    <td>貂蝉</td>
+                    <td>女</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>关系</td>
+                    <td colspan="2">夫妻</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </body>
+</html>
