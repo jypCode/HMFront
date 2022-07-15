@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+            span {
+                display: block;
+            }
+
+            a {
+                display: inline-block;
+                width: 120px;
+                height: 120px;
+                background: #cccccc;
+            }
+
+            h3,
+            ul,
+            li {
+                display: inline;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>块显示-独占一行</h1>
+        <hr>
+        <div>
+            块
+        </div>
+        <p>块</p>
+        <h3>块</h3>
+        <ul>
+            <li>块</li>
+        </ul>
+
+        <h1>行内显示 不能设置width height</h1>
+        <hr>
+        <div>
+            <span>行</span><a href="#">行</a><strong>行</strong>
+        </div>
+
+        <h1>行内块</h1>
+        <label>
+            <input type="text" placeholder="username">
+        </label>
+        <button type="submit">提交</button>
+        <hr>
+    </body>
+</html>
