@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+            div {
+                width: 800px;
+                height: 800px;
+                /*背景颜色*/
+                /*    默认透明背景*/
+                background-color: #cccccc;
+                /*    rbga */
+                background-color: rgba(125, 125, 125, .3);
+
+                /*    背景图片 图片覆盖背景颜色*/
+                background-image: url('/static/images/1.jpg');
+                /*    图片平铺*/
+                background-repeat: no-repeat;
+                /*background-repeat: repeat;*/
+                /*background-repeat: repeat-x;*/
+                /*background-repeat: repeat-y;*/
+                /*    图片位置*/
+                background-position: center center;
+            }
+
+            .zh {
+                width: 400px;
+                height: 400px;
+                background: red url('/static/images/car.jpg') no-repeat right center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            默认背景rbga(0,0,0,0)
+        </div>
+        <h1>背景连写</h1>
+        <div class="zh">
+            背景连写
+        </div>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+            div a {
+                /*    后代选择器, 包含子代, 孙子等后代*/
+                font-size: 32px;
+                color: blue;
+            }
+
+            /*    只选择儿子*/
+            div > a {
+                color: red;
+                text-decoration: none;
+            }
+
+            /*并集选择器*/
+            h1, p {
+                text-align: center;
+            }
+
+            /*    交集选择器*/
+            p.box {
+                background-color: #cccccc;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>后代选择器</h1>
+        <hr>
+        <div>
+            <a href="#">son-google</a>
+            <p>
+                son-p
+                <a href="#">grandson-biying</a>
+            </p>
+        </div>
+
+        <hr>
+        <h1>交集选择器</h1>
+        <div>
+            <p class="box">交集选择器</p>
+        </div>
+    </body>
+</html>
