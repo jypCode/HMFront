@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+            div {
+                font-style: italic;
+                font-weight: 600;
+                font-size: 30px;
+                font-family: "Fira Code", monospace;
+                text-align: center;
+                color: red;
+            }
+
+
+            #pid {
+                color: skyblue;
+            }
+
+            .pbox {
+                color: #ffa500;
+            }
+
+            p {
+                color: #cccccc !important;
+            }
+
+            .box {
+                color: #6246d2;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>继承特性--文字属性</h1>
+        <hr>
+        <div>
+            <div><span>文字属性</span></div>
+            <p>文字属性继承 <a href="#">文字属性</a></p>
+        </div>
+
+        <hr>
+        <hr>
+        <h1>样式优先级 继承< 通配符 < 标签< id< 行内式 范围越小优先级越高 </h1>
+        <hr>
+        <div class="box">
+            <p class="pbox" id="pid" style="color: red;">优先级测试</p>
+        </div>
+
+    </body>
+</html>
