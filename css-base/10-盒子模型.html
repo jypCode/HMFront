@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .d1 {
+                width: 330px;
+                height: 330px;
+                background-color: #ccc;
+                border: solid 1px black;
+                padding: 30px;
+                margin: 20px;
+            }
+
+            /*    内容区域*/
+            .d2 {
+                width: 400px;
+                height: 400px;
+                background-color: red;
+            }
+
+            .d3 {
+                border: 2px blue dashed;
+                width: 100px;
+                height: 100px;
+            }
+
+            .d4 {
+                border: 10px #87ceeb dotted;
+                width: 380px;
+                height: 380px;
+            }
+
+            .d5 {
+                width: 100px;
+                height: 100px;
+                background-color: #ccc;
+                /*padding: 50px;*/
+                /*padding: 50px 60px;*/
+                padding: 50px 60px 70px;
+            }
+
+            .d6 {
+                width: 300px;
+                height: 300px;
+                border: 10px solid black;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+
+            .d7 {
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>盒子模型 content内容 padding内边距 border边框 margin外边距</h1>
+        <hr>
+        <div class="d1">
+            内容
+        </div>
+        <div class="d1">
+            content
+        </div>
+        <br>
+        <br>
+        <br>
+        <h1>盒子模型 content内容 width height 设置宽高</h1>
+        <hr>
+        <div class="d2">
+            内容
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <h1>盒子模型 border边框</h1>
+        <hr>
+        <div class="d3">
+            内容
+        </div>
+        <br>
+        <br>
+        <br>
+        <h1>盒子模型 尺寸计算 总尺寸 content + border </h1>
+        <hr>
+        <div class="d4">
+            内容
+        </div>
+        <br>
+        <br>
+        <h1>盒子模型 内边距padding </h1>
+        <hr>
+        <div class="d5">
+            内容
+        </div>
+        <br>
+        <br>
+        <h1>盒子模型 尺寸计算 总尺寸 content + border + padding</h1>
+        <hr>
+        <div class="d6">
+            内容
+        </div>
+
+
+        <br>
+        <br>
+        <h1>盒子模型 外边距margin</h1>
+        <hr>
+        <div class="d7">
+            内容
+        </div>
+
+    </body>
+</html>

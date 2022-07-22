@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+            }
+
+            .box1 {
+                margin: 50px;
+
+            }
+
+            .box2 {
+                margin: 60px;
+            }
+
+            .father {
+                width: 400px;
+                height: 400px;
+                background-color: #cccccc;
+                overflow: hidden;
+            }
+
+            .son {
+                width: 100px;
+                height: 100px;
+                background-color: skyblue;
+                margin-top: 100px;
+            }
+            span {
+                margin: 20px;
+                line-height: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>上下取最大值</h1>
+        <hr>
+        <div class="box1">
+            11
+        </div>
+        <div class="box2">
+            22
+        </div>
+        <hr>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>嵌套块元素，父元素margin塌陷</h1>
+        <hr>
+        <div class="father">
+            <div class="son">
+
+            </div>
+        </div>
+        <hr>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>行内元素内外边距，上下边距生效，左右边距不生效， 上下加行高</h1>
+        <span>行内标签</span>
+        <span>行内标签</span>
+    </body>
+</html>
