@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .content {
+                margin: 0 auto;
+
+                width: 1226px;
+                height: 614px;
+            }
+
+            .goods-left,
+            .goods-right {
+                height: 614px;
+
+            }
+
+            .goods-left {
+                float: left;
+                width: 234px;
+                background-color: #800080;
+            }
+
+            .goods-right {
+                float: right;
+                width: 978px;
+            }
+
+            ul {
+                list-style: none;
+            }
+
+            .goods-right li {
+                float: left;
+
+                margin-right: 14px;
+                margin-bottom: 14px;
+
+                width: 234px;
+                height: 300px;
+                background-color: #8cceed;
+            }
+
+            .goods-right li:nth-child(4n) {
+                margin-right: 0;
+            }
+
+            .goods-right li:nth-child(n+4) {
+                margin-bottom: 0;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <div class="goods-left"></div>
+            <div class="goods-right">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
