@@ -1,0 +1,233 @@
+/*清除默认样式*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+
+/*负责版心居中*/
+.wrapper {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+/*头部样式*/
+.header {
+    height: 42px;
+    /*background-color: skyblue;*/
+    margin: 30px auto;
+}
+
+/*logo 导航*/
+h1,
+.nav {
+    float: left;
+}
+
+.nav {
+    margin-left: 70px;
+}
+
+.nav li {
+    float: left;
+    margin-right: 26px;
+    padding: 0 9px;
+    height: 42px;
+    line-height: 42px;
+
+}
+
+.nav li:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+.nav li:last-child {
+    margin-right: 0;
+}
+
+.nav li a {
+    display: block;
+    height: 42px;
+    font-size: 18px;
+    color: #050505;
+}
+
+/*搜索*/
+.search {
+    float: left;
+    margin-left: 86px;
+    width: 412px;
+    height: 42px;
+    border: 1px solid #00a4ff;
+}
+
+.search input {
+    float: left;
+
+    padding-left: 20px;
+    border: 0;
+
+    width: 360px;
+    height: 40px;
+}
+
+.search input::placeholder {
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+.search button {
+
+    float: left;
+
+    border: 0;
+
+    height: 40px;
+    width: 50px;
+    background-image: url(../images/btn.png);
+}
+
+/*头像*/
+.user {
+    float: left;
+    margin-left: 32px;
+
+    width: 118px;
+    height: 42px;
+    line-height: 42px;
+}
+
+.user img {
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+/*轮播图*/
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+
+.banner .wrapper {
+    height: 420px;
+    background-image: url(../images/banner2.png);
+}
+
+/*轮播图左侧*/
+.banner .left {
+    float: left;
+
+    padding: 0 20px;
+
+    width: 190px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, .3);
+
+    font-size: 14px;
+    line-height: 44px;
+}
+
+.banner .left li a {
+    color: #fff;
+}
+
+.banner .left li a:hover {
+    color: #00b4ff;
+}
+
+.banner .left li span {
+    float: right;
+}
+
+/*轮播图右侧*/
+.banner .right {
+    float: right;
+
+    margin-top: 50px;
+
+    width: 228px;
+    height: 300px;
+    background-color: #fff;
+}
+
+.banner .right h2 {
+
+    width: 228px;
+    height: 48px;
+    background-color: #9bceea;
+
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+    color: #fff;
+}
+
+/*轮播图右侧列表*/
+
+.banner .content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 4px;
+    width: 228px;
+}
+
+.banner .content dl {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #e5e5e5;
+
+}
+
+.banner .content dl dd {
+    font-size: 14px;
+    color: #4e4e4e;
+    line-height: 16px;
+}
+
+.banner .content dl dt {
+    font-size: 12px;
+    color: #a5a5a5;
+    line-height: 14px;
+}
+
+.banner .right .more {
+    margin: 6px auto 0;
+    height: 42px;
+    width: 200px;
+    border: 1px solid #004aff;
+}
+
+.banner .right .more a {
+    display: block;
+    height: 42px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #004aff;
+    text-align: center;
+    line-height: 42px;
+}
